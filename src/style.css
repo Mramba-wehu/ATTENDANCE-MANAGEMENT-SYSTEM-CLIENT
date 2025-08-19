@@ -1,0 +1,43 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+#app {
+  all:  inherit;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: none !important;
+}
+
+.fit {
+  width: fit-content;
+  height: fit-content;
+}
+
+.card {
+  width: 20rem;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
