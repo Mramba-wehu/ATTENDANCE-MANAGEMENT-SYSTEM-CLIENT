@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es2017",
     "module": "esnext",
     "moduleResolution": "bundler",
     "baseUrl": ".",
@@ -16,7 +17,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "allowJs": false,
-    "isolatedModules": false
+    "isolatedModules": false,
+    "skipLibCheck": true   
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
