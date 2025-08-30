@@ -1,7 +1,7 @@
 import type { MODULES } from '@/services/unniversal/store';
 import * as security from '@/components/utils/security';
 
-const API_URL = '/api/access';
+const API_URL = 'https://attendance-management-system-server.onrender.com/api/access';
 
 type LoginPayload = {
   regNo: string;
@@ -109,4 +109,5 @@ export const register = async (payload: RegisterPayload) => {
       errors: error?.errors || null,
     };
   }
+
 };
