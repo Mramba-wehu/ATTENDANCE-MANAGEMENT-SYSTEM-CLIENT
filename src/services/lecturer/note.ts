@@ -1,6 +1,6 @@
 import * as security from '@components/utils/security'
 
-const API_URL = '/api/notes'
+const API_URL = 'https://attendance-management-system-server.onrender.com/api/notes'
 
 export const getNotes = async (courseCode: string) => {
   try {
@@ -94,4 +94,5 @@ export const downloadNote = async (dl: Function, note: any) => {
       errors: error?.errors || null,
     }
   }
+
 }
