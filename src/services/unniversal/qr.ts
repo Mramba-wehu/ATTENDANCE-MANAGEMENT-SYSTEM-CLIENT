@@ -1,6 +1,6 @@
 import * as security from '@components/utils/security'
 
-const API_URL = '/api/qr'
+const API_URL = 'https://attendance-management-system-server.onrender.com/api/qr'
 
 export const secureQR = (data: any | null = null, status: boolean = true): any => {
     if(!data) {
@@ -81,4 +81,5 @@ export const validateQR = async (qrData: any | null = null, regNo: string | null
       errors: error?.errors || null,
     }
   }
+
 }
