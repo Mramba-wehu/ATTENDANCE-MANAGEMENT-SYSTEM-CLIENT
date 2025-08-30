@@ -10,7 +10,8 @@ export default defineConfig({
     allowedHosts: ['.ngrok-free.app'],
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        // target: 'http://localhost:5000',use for local developement
+        target: 'https://attendance-management-system-server.onrender.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api'),
       }
