@@ -1,6 +1,6 @@
 import * as security from "@components/utils/security";
 
-const API_URL = "/api";
+const API_URL = "https://attendance-management-system-server.onrender.com/api";
 
 export const getCourses = async () => {
   try {
@@ -201,4 +201,5 @@ export const deleteCourse = async (courseCode: string) => {
       errors: error?.errors || null,
     }
   }
+
 };
