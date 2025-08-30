@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref, computed, getCurrentInstance, nextTick, watch } from 'vue'
 import { useRoute } from "vue-router"
-import { QrcodeStream } from '../../assets/deps/vue-qrcode-reader'
+import { QrcodeStream } from 'vue-qrcode-reader'
 import { useAuthStore } from "@services/unniversal/store"
 import { type Role, type Feed } from '@services/unniversal/validation'
 import { getUsers } from '@services/unniversal/profile'
@@ -407,3 +407,4 @@ div
           .mt-3
             button.btn.btn-sm.btn-outline-danger(@click.prevent="done") Cancel
 </template>
+
