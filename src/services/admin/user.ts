@@ -1,6 +1,6 @@
 import * as security from '@components/utils/security'
 
-const API_URL = '/api/users'
+const API_URL = 'https://attendance-management-system-server.onrender.com/api/users'
 
 export const getUsers = async () => {
   try {
@@ -83,4 +83,5 @@ export const deleteUser = async (user: any) => {
       errors: error?.errors || null,
     }
   }
+
 }
