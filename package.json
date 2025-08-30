@@ -22,9 +22,8 @@
     "pug": "^3.0.3",
     "qrcode": "^1.5.4",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
-  },
-  "devDependencies": {
+    "vue-qrcode-reader": "^5.7.2",
+    "vue-router": "^4.5.1",
     "@types/crypto-js": "^4.2.2",
     "@types/downloadjs": "^1.4.6",
     "@types/jquery": "^3.5.32",
