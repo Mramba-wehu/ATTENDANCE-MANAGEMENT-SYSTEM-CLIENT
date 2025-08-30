@@ -1,6 +1,6 @@
 import * as security from '@components/utils/security'
 
-const API_URL = '/api/pleas'
+const API_URL = 'https://attendance-management-system-server.onrender.com/api/pleas'
 
 export const getPleas = async (courseCode: string) => {
   try {
@@ -43,4 +43,5 @@ export const updatePleaStatus = async (user: any) => {
       errors: error?.errors || null,
     }
   }
+
 }
